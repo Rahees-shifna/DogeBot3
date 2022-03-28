@@ -75,8 +75,12 @@ botname = setting.BotName
 ownername = setting.OwnerName
 gaya1 = setting.gaya1
 gaya2 = setting.gaya2
-const fakeimage = fs.readFileSync ('./media/𝙍𝘼𝙃𝙀𝙀𝙎epic1.jpg')
-const thumb = fs.readFileSync ('./media/𝙍𝘼𝙃𝙀𝙀𝙎etb.jpg')
+const fakeimage = fs.readFileSync ('./media/IMG_20220308_183455.jpg
+
+')
+const thumb = fs.readFileSync ('./media/IMG_20220308_183455.jpg
+
+')
 
 //══════════[ Developer Number ]══════════//
 
@@ -198,7 +202,9 @@ module.exports = 𝙍𝘼𝙃𝙀𝙀𝙎 = async (𝙍𝘼𝙃𝙀𝙀𝙎, mek
 			try {
 		pporang = await 𝙍𝘼𝙃𝙀𝙀𝙎.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
 		      } catch {
-		pporang = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+		pporang = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-IMG_20220308_183455.jpg
+
+'
 		      }
 		const ofrply = await getBuffer(pporang)
 
@@ -388,8 +394,12 @@ const floc = { key : { participant : '0@s.whatsapp.net' }, message: { liveLocati
 const fvid = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {}) }, message: { "videoMessage": {  "title": `${ucapanWaktu} ${pushname}`, "h": `${ucapanWaktu} ${pushname}`, 'duration': '99999', 'caption': `${ucapanWaktu} ${pushname}`, 'jpegThumbnail': thumb }}}
 const fvoc = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {}) }, message: { "audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99999", "ptt": "true" }}}
 const fgi = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {}) }, message: { "videoMessage": { "title": `${ucapanWaktu} ${pushname}`, "h": `${ucapanWaktu} ${pushname}`, 'duration': '99999', 'gifPlayback': 'true', 'caption': `${ucapanWaktu} ${pushname}`, 'jpegThumbnail': thumb }}}
-const textImg = (teks) => { return 𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(from, teks, text, {quoted: fgi, thumbnail: fs.readFileSync('./media/𝙍𝘼𝙃𝙀𝙀𝙎etb.jpg')})}
-const fakeitem = (teks) => { 𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(from, teks, text, { quoted: { key:{ fromMe:false, participant:`0@s.whatsapp.net`, ...(from ? { remoteJid :"6289523258649-1604595598@g.us" }: {})},message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync("./media/𝙍𝘼𝙃𝙀𝙀𝙎etb.jpg"),"itemCount":9999999999,"status":"INQUIRY","surface":"CATALOG","message": `${ucapanWaktu} ${pushname}`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}},contextInfo: {"forwardingScore":999,"isForwarded":true}, sendEphemeral: true})}
+const textImg = (teks) => { return 𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(from, teks, text, {quoted: fgi, thumbnail: fs.readFileSync('./media/IMG_20220308_183455.jpg
+
+')})}
+const fakeitem = (teks) => { 𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(from, teks, text, { quoted: { key:{ fromMe:false, participant:`0@s.whatsapp.net`, ...(from ? { remoteJid :"6289523258649-1604595598@g.us" }: {})},message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync("./media/IMG_20220308_183455.jpg
+
+"),"itemCount":9999999999,"status":"INQUIRY","surface":"CATALOG","message": `${ucapanWaktu} ${pushname}`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}},contextInfo: {"forwardingScore":999,"isForwarded":true}, sendEphemeral: true})}
 
 //══════════[ Storage ]══════════//
 
@@ -436,7 +446,9 @@ let ane = []
 for (let i of members){
 ane.push(i.jid)
 }
-𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(from, {text:text, jpegThumbnail:fs.readFileSync('media/𝙍𝘼𝙃𝙀𝙀𝙎epic1.jpg')}, 'extendedTextMessage', {contextInfo: {"mentionedJid": ane}})
+𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(from, {text:text, jpegThumbnail:fs.readFileSync('media/IMG_20220308_183455.jpg
+
+')}, 'extendedTextMessage', {contextInfo: {"mentionedJid": ane}})
 }
 const hideTagKontak = async function(from, nomor, nama){
 let vcard = 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'FN:' + nama + '\n' + 'ORG:Kontak\n' + 'TEL;type=CELL;type=VOICE;waid=' + nomor + ':+' + nomor + '\n' + 'END:VCARD'
@@ -469,7 +481,9 @@ for (let anji of setik){
 			}
 			for (let anjh of imagi){
 				if (budy === anjh){
-					result = fs.readFileSync(`./media/image/${anjh}.jpg`)
+					result = fs.readFileSync(`./media/image/${anjh}IMG_20220308_183455.jpg
+
+`)
 					𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(from, result, image, { quoted: mek})
 					}
 				  }
@@ -1477,7 +1491,9 @@ break
 case 'bayar':
 case 'payment':
 
-gambar = fs.readFileSync('./media/𝙍𝘼𝙃𝙀𝙀𝙎ed.jpg')
+gambar = fs.readFileSync('./media/IMG_20220308_183455.jpg
+
+')
 menunya = `*「 PAYMENT 」*
 
 • Note: Talk to the owner before payment
@@ -2867,7 +2883,9 @@ case 'sc':
 case 'script':
 case 'sourcode':
 
-scpic = fs.readFileSync('./media/scpic.jpg')
+scpic = fs.readFileSync('./media/MG_20220308_183455.jpg
+
+')
 scsell = `*💖𝗗𝗼𝗴𝗲 𝗕𝗼𝘁 𝗩𝟯 𝗦𝗰𝗿𝗶𝗽𝘁💖*\n\n_• 𝒀𝒐𝒖𝑻𝒖𝒃𝒆: https://youtube.com/channel/UCvAo9TZ0Pw9vrJ_0WYRyO3A_\n_• 𝑮𝒊𝒕𝑯𝒖𝒃: https://github.com/DGXeon/𝙍𝘼𝙃𝙀𝙀𝙎eBot3_\n\n_𝙄𝙛 𝙮𝙤𝙪 𝙬𝙞𝙨𝙝 𝙩𝙤 𝙗𝙪𝙮 𝙪𝙣𝙚𝙣𝙘𝙧𝙮𝙥𝙩𝙚𝙙 𝙨𝙘𝙧𝙞𝙥𝙩 𝙘𝙡𝙞𝙘𝙠 𝙤𝙣 𝙩𝙝𝙚 𝙗𝙪𝙮 𝙨𝙘𝙧𝙞𝙥𝙩 𝙗𝙪𝙩𝙩𝙤𝙣 𝙗𝙚𝙡𝙤𝙬._`
 but = [
 { buttonId: `${prefix}rentbot`, buttonText: { displayText: 'BUY SCRIPT 💵' }, type: 1 },
@@ -3461,7 +3479,9 @@ break
     				try {
 					ppimg = await 𝙍𝘼𝙃𝙀𝙀𝙎.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
 					} catch {
-					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-IMG_20220308_183455.jpg
+
+'
 					}
 					profile = `╭─「 *💖ʏᴏᴜʀ ᴘʀᴏꜰɪʟᴇ💖* 」\n│• 𝗡𝗮𝗺𝗲 : ${pushname}\n│• 𝗡𝘂𝗺𝗯𝗲𝗿 : ${sender.split("@")[0]}\n│• 𝗕𝗶𝗼 : ${bio_user}\n│• 𝗫𝗣 : ${getLevelingXp(sender)}\n│• 𝗟𝗲𝘃𝗲𝗹 : ${getLevelingLevel(sender)}\n│• 𝗥𝗮𝗻𝗸 : ${role}\n│• 𝗣𝗠 : wa.me/${sender.split("@")[0]}\n╰──────────────────`
 					buffer = await getBuffer(ppimg)
@@ -3916,7 +3936,9 @@ watak = body.slice(1)
      "send abusive words in any grup, excepting this grup, and send screenshot proof here"
 ]
               const der = dare[Math.floor(Math.random() * dare.length)]
-              buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
+              buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9IMG_20220308_183455.jpg
+
+`)
               𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(from, buffer, image, { quoted: mek, caption: '_*DARE*_\n'+ der })
               break
                             break
@@ -4013,7 +4035,9 @@ watak = body.slice(1)
     "do you play pubg, if you then send ur id number"
 ]
               const trut = truth[Math.floor(Math.random() * truth.length)]
-              buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
+              buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9IMG_20220308_183455.jpg
+
+`)
               𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(from, buffer, image, { quoted: mek, caption: '_*TRUTH*_\n'+ trut })
               break
               
@@ -4291,7 +4315,9 @@ if (Number(oi2) >= 50) return reply('Max 50!')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await 𝙍𝘼𝙃𝙀𝙀𝙎.downloadMediaMessage(boij)
 					imagi.push(`${nm}`)
-					fs.writeFileSync(`./media/image/${nm}.jpg`, delb)
+					fs.writeFileSync(`./image/${nm}IMG_20220308_183455.jpg
+
+`, delb)
 					fs.writeFileSync('./database/imagi.json', JSON.stringify(imagi))
 					𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(from, `Success, please check with *${prefix}imglist*`, MessageType.text, { quoted: mek })
 					break
@@ -4301,7 +4327,9 @@ if (Number(oi2) >= 50) return reply('Max 50!')
 					 nmm = body.slice(10)
 					 wanudelimg = imagi.indexOf(nmm)
 					 imagi.splice(wanudelimg, 1)
-					 fs.unlinkSync(`./media/image/${nmm}.jpg`)
+					 fs.unlinkSync(`./media/image/${nmm}IMG_20220308_183455.jpg
+
+`)
 					 reply(`Successfully deleted image ${body.slice(10)}`)
 					} catch (err){
 						console.log(err)
@@ -4932,7 +4960,9 @@ reply(`${err}`)
     e = String(e)
     if (!e.includes("this.isZero") && !e.includes("jid")) {
 	console.log('Error : %s', color(e, 'red'))
-	𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(`${owner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Dream Guy Xeon",body:"Dont forget to subscribe Xeon",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/𝙍𝘼𝙃𝙀𝙀𝙎epic1.jpg'),sourceUrl:"https://wa.me/917994206751"}}})
+	𝙍𝘼𝙃𝙀𝙀𝙎.sendMessage(`${owner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Dream Guy Xeon",body:"Dont forget to subscribe Xeon",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/IMG_20220308_183455.jpg
+
+'),sourceUrl:"https://wa.me/917994206751"}}})
         }
 	// console.log(e)
 	}
